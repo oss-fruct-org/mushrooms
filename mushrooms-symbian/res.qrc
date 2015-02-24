@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gfx/bad.svg</file>
+        <file>gfx/cond.svg</file>
+        <file>gfx/good.svg</file>
+        <file>gfx/splash-portrait.png</file>
+        <file>qml/Gothic.ttf</file>
+        <file>gfx/splash-portrait_en.png</file>
+        <file>translations/t1_ru.qm</file>
+    </qresource>
+</RCC>

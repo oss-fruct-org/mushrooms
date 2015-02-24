@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mushrooms><mushroom>
+    <id>137</id>
+    <location>North America, Europe</location>
+    <image>images/137.jpg</image>
+    
+    <title/>
+    <lat_title>Boletus edulis</lat_title>
+    <synonyms>Bolet comestible, Cep, Cpe de Bordeaux, Champignon polonais, King Bolete, Penny Bun, Porcini, Steinpilz</synonyms>
+    <color>Brown</color>
+    <size>over 15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Bulbous base of stem, Simple stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>121</id>
+    <location>North America, Europe</location>
+    <image>images/121.jpg</image>
+    
+    <title/>
+    <lat_title>Pleurotus ostreatus</lat_title>
+    <synonyms>Austernpilz, Austernseitling, Oyster Mushroom, Pleurote en forme d'hutre</synonyms>
+    <color>White to cream, Blue, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Funnel shaped</cap>
+    <meat/>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>214</id>
+    <location>North America</location>
+    <image>images/214.jpg</image>
+    
+    <title/>
+    <lat_title>Macrolepiota rhacodes</lat_title>
+    <synonyms>Chlorophyllum rhacdes, Lpiote Dguenille, Rtender Schirmpilz, Safanschirmpilz, Shaggy Parasol</synonyms>
+    <color>White to cream, Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Distinctly scaly</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Ring on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>213</id>
+    <location>North America, Europe</location>
+    <image>images/213.jpg</image>
+    
+    <title/>
+    <lat_title>Macrolepiota procera</lat_title>
+    <synonyms>Coulemelle, Lpiote leve, Parasol, Riesenschirmpilz</synonyms>
+    <color>White to cream, Grey to beige</color>
+    <size>over 15cm</size>
+    <grow>Grows in woods, Grows on the ground, Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>162</id>
+    <location>North America, Europe</location>
+    <image>images/162.jpg</image>
+    
+    <title/>
+    <lat_title>Hydnum repandum</lat_title>
+    <synonyms>Chevrette, Hydne sinu, Pied de mouton, Semmel-Stoppelpilz, Wood Hedgehog</synonyms>
+    <color>White to cream, Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh granular or brittle</meat>
+    <leg/>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>150</id>
+    <location>North America, Europe</location>
+    <image>images/150.jpg</image>
+    
+    <title/>
+    <lat_title>Gyroporus castaneus</lat_title>
+    <synonyms>Cpe chtain, Chestnut Bolete, Hasenrhrling</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>107</id>
+    <location>North America, Europe</location>
+    <image>images/107.jpg</image>
+    
+    <title/>
+    <lat_title>Flammulina velutipes</lat_title>
+    <synonyms>Collybie a pied veloute, Enoki, Enokitake, Samtfussrubling, Velvet Shank</synonyms>
+    <color>White to cream, Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>132</id>
+    <location>North America, Europe</location>
+    <image>images/132.jpg</image>
+    
+    <title/>
+    <lat_title>Fistulina hepatica</lat_title>
+    <synonyms>Beefsteak Fungus, Fistuline hpatique, Langue de boeuf, Leberpilz, Ox Tongue</synonyms>
+    <color>Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Other</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>204</id>
+    <location>North America, Europe</location>
+    <image>images/204.jpg</image>
+    
+    <title/>
+    <lat_title>Lyophyllum decastes</lat_title>
+    <synonyms>Brauner Rasling, Chicken Mushroom, Clustered Domecap, Fried Chicken Mushroom, Lyophille en touffes, Tricolome agrg</synonyms>
+    <color>Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>197</id>
+    <location>North America, Europe</location>
+    <image>images/197.jpg</image>
+    
+    <title/>
+    <lat_title>Lepista nuda</lat_title>
+    <synonyms>Pied bleu, Rhodopaxille nu, Violetter Rtelritterling, Wood Blewit</synonyms>
+    <color>Violet or purple, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg/>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>130</id>
+    <location>North America, Europe</location>
+    <image>images/130.jpg</image>
+    
+    <title/>
+    <lat_title>Laetiporus sulphureus</lat_title>
+    <synonyms>Chicken of the Woods, Polypore soufr, Schwefelporling, Sulphur Shelf</synonyms>
+    <color>Yellow, Orange</color>
+    <size>over 15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Other</cap>
+    <meat/>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>106</id>
+    <location>North America, Europe</location>
+    <image>images/106.jpg</image>
+    
+    <title/>
+    <lat_title>Agaricus augustus</lat_title>
+    <synonyms>Agaric auguste, Oriscsiperke, Riesenegerling, The Prince</synonyms>
+    <color>White to cream, Yellow, Orange</color>
+    <size>over 15cm</size>
+    <grow>Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>101</id>
+    <location>North America, Europe</location>
+    <image>images/101.jpg</image>
+    
+    <title/>
+    <lat_title>Agaricus bisporus</lat_title>
+    <synonyms>Agaric cultiv, Champignon de Paris, Cultivated Mushroom, Ktspors csiperke, Pratelle, Zuchtchampignon</synonyms>
+    <color>White to cream, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  <mushroom>
+    <id>100</id>
+    <location>North America, Europe</location>
+    <image>images/100.jpg</image>
+    
+    <title/>
+    <lat_title>Agaricus campestris</lat_title>
+    <synonyms>Agaric champtre, Feldegerling, Field Mushroom, Pink Bottom, Ros de prs, Weisenchampignon</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows on the ground, Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Choice</category>
+  </mushroom>
+  </mushrooms>

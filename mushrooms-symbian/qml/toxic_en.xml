@@ -1,0 +1,1397 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mushrooms><mushroom>
+    <id>161</id>
+    <location>North America, Europe</location>
+    <image>images/161.jpg</image>
+    
+    <title/>
+    <lat_title>Boletinus cavipes</lat_title>
+    <synonyms>Bolet  pied creux, Hohlfussrhrling</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>69</id>
+    <location>North America, Europe</location>
+    <image>images/69.jpg</image>
+    
+    <title/>
+    <lat_title>Russula foetens</lat_title>
+    <synonyms>Russule fetide, Stinking Brittlegill, Stinktubling</synonyms>
+    <color>White to cream, Yellow, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>83</id>
+    <location>North America, Europe</location>
+    <image>images/83.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius pubescens</lat_title>
+    <synonyms>Bearded Milkcap, Zottiger Milchling</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>184</id>
+    <location>North America, Europe</location>
+    <image>images/184.jpg</image>
+    
+    <title/>
+    <lat_title>Hygrophorus eburneus</lat_title>
+    <synonyms>Fichten-Schneckling, Hygrophore blanc d'ivoire, Ivory Woodwax</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground, Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>189</id>
+    <location>North America, Europe</location>
+    <image>images/189.jpg</image>
+    
+    <title/>
+    <lat_title>Hygrophorus erubescens</lat_title>
+    <synonyms/>
+    <color>White to cream, Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Distinctly scaly</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>188</id>
+    <location>North America</location>
+    <image>images/188.jpg</image>
+    
+    <title/>
+    <lat_title>Hygrophorus olivaceoalbus</lat_title>
+    <synonyms/>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>84</id>
+    <location>North America, Europe</location>
+    <image>images/84.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius helvus</lat_title>
+    <synonyms>Fenugreek Milkcap, Maggipilz</synonyms>
+    <color>Yellow, Red or redish or pink, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>195</id>
+    <location>North America, Europe</location>
+    <image>images/195.jpg</image>
+    
+    <title/>
+    <lat_title>Clitocybe clavipes</lat_title>
+    <synonyms>Ampulloclitocybe clavipes, Clitocybe  pied en massue, Clubfoot, Keulen-Trichterling</synonyms>
+    <color>White to cream, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Funnel shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>192</id>
+    <location>North America, Europe</location>
+    <image>images/192.jpg</image>
+    
+    <title/>
+    <lat_title>Clitocybe nebularis</lat_title>
+    <synonyms>Clitocybe nbuleux, Clouded Agaric, Clouded Funnel, Nebelkappe</synonyms>
+    <color>White to cream, Grey to beige</color>
+    <size>over 15cm</size>
+    <grow/>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>81</id>
+    <location>North America, Europe</location>
+    <image>images/81.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius rufus</lat_title>
+    <synonyms>Fuchsfarbener Milchling, Lactaire roux, Rufous Milkcap</synonyms>
+    <color>Yellow, Red or redish or pink, Orange</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>77</id>
+    <location>North America</location>
+    <image>images/77.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius scrobiculatus</lat_title>
+    <synonyms/>
+    <color>Yellow, Orange</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>74</id>
+    <location>North America, Europe</location>
+    <image>images/74.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius controversus</lat_title>
+    <synonyms>Lactaire des peupliers, Rosascheckiger Milchling</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Funnel shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>76</id>
+    <location>North America, Europe</location>
+    <image>images/76.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius piperatus</lat_title>
+    <synonyms>Lactaire poivr, Peppery Milkcap, Pfeffer-Milchling, Vache blanche</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>243</id>
+    <location>North America, Europe</location>
+    <image>images/243.jpg</image>
+    
+    <title/>
+    <lat_title>Oudemansiella radicata</lat_title>
+    <synonyms>Collybie radicante, Rooting shank, Wurzelschleimrhling, Xerula radicata</synonyms>
+    <color>Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Stem much longer than cap diameter</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>110</id>
+    <location>North America, Europe</location>
+    <image>images/110.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma flavovirens</lat_title>
+    <synonyms>Chevalier, Grnling, Tricholoma equestre, Tricolome questre</synonyms>
+    <color>Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>217</id>
+    <location>Europe</location>
+    <image>images/217.jpg</image>
+    
+    <title/>
+    <lat_title>Cystoderma carcharias</lat_title>
+    <synonyms/>
+    <color>White to cream</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods</grow>
+    <cap>Conical or nearly so</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>208</id>
+    <location>Europe</location>
+    <image>images/208.jpg</image>
+    
+    <title/>
+    <lat_title>Collybia fusipes</lat_title>
+    <synonyms>Collybia lancipes, Gymnopus fusipes, Souchette, Spindelrbling, Spindle Toughshank</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>209</id>
+    <location>North America, Europe</location>
+    <image>images/209.jpg</image>
+    
+    <title/>
+    <lat_title>Collybia acervata</lat_title>
+    <synonyms>Gymnopus acervatus</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>239</id>
+    <location>North America, Europe</location>
+    <image>images/239.jpg</image>
+    
+    <title/>
+    <lat_title>Crepidotus mollis</lat_title>
+    <synonyms>Crepidote mou, Gallertfleischiges Stummelfusschen, Peeling Oysterling</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Other</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>241</id>
+    <location>North America, Europe</location>
+    <image>images/241.jpg</image>
+    
+    <title/>
+    <lat_title>Lepiota clypeolaria</lat_title>
+    <synonyms/>
+    <color>White to cream, Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>230</id>
+    <location>North America, Europe</location>
+    <image>images/230.jpg</image>
+    
+    <title/>
+    <lat_title>Hypholoma sublateritium</lat_title>
+    <synonyms>Bricks Caps, Hypholome presque brique, Ziegelroter Schwefelkopf</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>231</id>
+    <location>North America, Europe</location>
+    <image>images/231.jpg</image>
+    
+    <title/>
+    <lat_title>Hypholoma capnoides</lat_title>
+    <synonyms>Conifer Tuft, Graublttriger Schwefelkopf, Hypholome capnode</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>85</id>
+    <location>North America, Europe</location>
+    <image>images/85.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius vietus</lat_title>
+    <synonyms>Graufleckender Milchling, Grey Milkcap, Lactaire  lait gris</synonyms>
+    <color>Yellow, Violet or purple, Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>90</id>
+    <location>North America, Europe</location>
+    <image>images/90.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius pyrogalus</lat_title>
+    <synonyms>Beissender Milchling, Fiery Milkcap, Lactaire  lait brlant</synonyms>
+    <color>Yellow, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>94</id>
+    <location>North America</location>
+    <image>images/94.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius uvidus</lat_title>
+    <synonyms/>
+    <color>White to cream, Violet or purple, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>92</id>
+    <location>North America, Europe</location>
+    <image>images/92.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius mitissimus</lat_title>
+    <synonyms>Milder Milchling</synonyms>
+    <color>Brown, Orange</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>89</id>
+    <location>Europe</location>
+    <image>images/89.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius fuliginosus</lat_title>
+    <synonyms>Lactaire couleur de fume, Russfarbener Milchling, Sooty Milkcap</synonyms>
+    <color>Brown, Black or blackish, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh discolours when cut, bruised or damaged, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>246</id>
+    <location>North America, Europe</location>
+    <image>images/246.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita rubescens</lat_title>
+    <synonyms>Amanite rougissante, Blusher, Golmotte, Perlpilz, Pirulo galoca</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Ring on stem, Volva on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>220</id>
+    <location>North America, Europe</location>
+    <image>images/220.jpg</image>
+    
+    <title/>
+    <lat_title>Psathyrella candolleana</lat_title>
+    <synonyms>Behangener Faserling, Fehr porhanyosgomba, Hypholome de De Candolle, Pale Brittlestem</synonyms>
+    <color>White to cream, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh granular or brittle</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>210</id>
+    <location>North America, Europe</location>
+    <image>images/210.jpg</image>
+    
+    <title/>
+    <lat_title>Collybia dryophila</lat_title>
+    <synonyms>Collybie des chnes, Gymnopus dryophilus, Oak-loving Collybia, Russet Toughshank, Waldrbling</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground, Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh fibrous usually pliable (like grass)</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>177</id>
+    <location>North America, Europe</location>
+    <image>images/177.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius purpurascens</lat_title>
+    <synonyms>Bruising Webcap, Cortinaire purpurac, Purpurfleckender Klumpfuss</synonyms>
+    <color>Violet or purple, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>174</id>
+    <location>North America, Europe</location>
+    <image>images/174.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius alboviolaceus</lat_title>
+    <synonyms>Cortinaire blanc et violet, Pearly Webcap, Weissvioletter Dickfuss</synonyms>
+    <color>White to cream, Blue, Violet or purple</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Other</meat>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>179</id>
+    <location>Europe</location>
+    <image>images/179.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius delibutus</lat_title>
+    <synonyms>Blaublttriger Schleimfuss, Cortinaire glutineus, Yellow Webcap</synonyms>
+    <color>Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>176</id>
+    <location>Europe</location>
+    <image>images/176.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius praestans</lat_title>
+    <synonyms>Goliath Webcap</synonyms>
+    <color>Brown</color>
+    <size>over 15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>169</id>
+    <location>North America, Europe</location>
+    <image>images/169.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius collinitus</lat_title>
+    <synonyms>Blaustieliger Schleimfuss, Cortinaire  bracelets</synonyms>
+    <color>Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg>Stem much longer than cap diameter</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>170</id>
+    <location>North America, Europe</location>
+    <image>images/170.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius violaceus</lat_title>
+    <synonyms>Cortinaire violet, Dunkelvioletter Dickfuss, Violet Webcap</synonyms>
+    <color>Violet or purple</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>175</id>
+    <location>North America, Europe</location>
+    <image>images/175.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius pholideus</lat_title>
+    <synonyms>Cortinaire cailleux, Scaly Webcap, Schuppiger Dickfuss</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Distinctly scaly</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>133</id>
+    <location>North America, Europe</location>
+    <image>images/133.jpg</image>
+    
+    <title/>
+    <lat_title>Lentinus tigrinus</lat_title>
+    <synonyms/>
+    <color>Black or blackish, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Funnel shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>203</id>
+    <location>North America, Europe</location>
+    <image>images/203.jpg</image>
+    
+    <title/>
+    <lat_title>Pluteus leoninus</lat_title>
+    <synonyms>Lion Shield, Lwengelber Dachpilz, Plute couleur de lion</synonyms>
+    <color>Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>66</id>
+    <location>North America, Europe</location>
+    <image>images/66.jpg</image>
+    
+    <title/>
+    <lat_title>Russula delica</lat_title>
+    <synonyms>Blaubdttiger Tubling, Milk-white Brittlegill, Russule sans lait</synonyms>
+    <color>White to cream, Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>68</id>
+    <location>North America, Europe</location>
+    <image>images/68.jpg</image>
+    
+    <title/>
+    <lat_title>Russula nigricans</lat_title>
+    <synonyms>Blackening Brittlegill, Dickblttriger Schwarztubling, Russule noircissante</synonyms>
+    <color>White to cream, Brown, Black or blackish, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh discolours when cut, bruised or damaged, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>67</id>
+    <location>North America, Europe</location>
+    <image>images/67.jpg</image>
+    
+    <title/>
+    <lat_title>Russula adusta</lat_title>
+    <synonyms>Rauchbrauner Schwarztubling, Russule brle, Winecork Brittlegill</synonyms>
+    <color>Brown, Black or blackish</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh discolours when cut, bruised or damaged, Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>164</id>
+    <location>Europe</location>
+    <image>images/164.jpg</image>
+    
+    <title/>
+    <lat_title>Rhizopogon luteolus</lat_title>
+    <synonyms>Gelbliche Barttrffel, Rhizopogon jauntre, Yellow False Truffle</synonyms>
+    <color>Yellow</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows underground</grow>
+    <cap>Other</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>115</id>
+    <location>North America</location>
+    <image>images/115.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma albobrunneum</lat_title>
+    <synonyms>Tricolome brun et blanc, Weissbrauner Ritterling</synonyms>
+    <color>White to cream, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Mushroom slimy or sticky</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>244</id>
+    <location>North America, Europe</location>
+    <image>images/244.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholomopsis rutilans</lat_title>
+    <synonyms>Pleurote rutilant, Plums and Custard, Rtlicher Holzritterling, Tricolome rutilant</synonyms>
+    <color>Yellow, Violet or purple</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground, Grows on wood</grow>
+    <cap>Distinctly scaly</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>112</id>
+    <location>North America, Europe</location>
+    <image>images/112.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma sejunctum</lat_title>
+    <synonyms>Braungelber Ritterling, Deceiving Knight, Jaunet</synonyms>
+    <color>Yellow, Green, Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>205</id>
+    <location>North America, Europe</location>
+    <image>images/205.jpg</image>
+    
+    <title/>
+    <lat_title>Lyophyllum connatum</lat_title>
+    <synonyms>Weisser Rasling, White Domecap</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap/>
+    <meat/>
+    <leg>Stem much longer than cap diameter</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>109</id>
+    <location>North America, Europe</location>
+    <image>images/109.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma imbricatum</lat_title>
+    <synonyms>Feinschuppiger Ritterling, Matt Knight, Tricolome Imbriqu</synonyms>
+    <color>Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>79</id>
+    <location>North America, Europe</location>
+    <image>images/79.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius vellereus</lat_title>
+    <synonyms>Fleecy Milkcap, Lactaire velout, Samtiger Milchling</synonyms>
+    <color>White to cream, Yellow, Red or redish or pink, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>228</id>
+    <location>North America, Europe</location>
+    <image>images/228.jpg</image>
+    
+    <title/>
+    <lat_title>Stropharia aeruginosa</lat_title>
+    <synonyms>Grnspantruschling, Strophaire vert-de-gris, Verdigris Agaric, Vert-de-gris</synonyms>
+    <color>Blue, Green</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground, Found in fields, lawns or on roadsides&#13;
+, Grows on plant material/manure</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>229</id>
+    <location>North America, Europe</location>
+    <image>images/229.jpg</image>
+    
+    <title/>
+    <lat_title>Stropharia coronilla</lat_title>
+    <synonyms>Garland Roundhead, Krnchen-Truschling, Strophaire coronille</synonyms>
+    <color>White to cream, Yellow</color>
+    <size>Less than 5cm</size>
+    <grow>Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom slimy or sticky</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>62</id>
+    <location>North America, Europe</location>
+    <image>images/62.jpg</image>
+    
+    <title/>
+    <lat_title>Russula pulchella</lat_title>
+    <synonyms>Bleached Brittlegill, Verblassender Tubling</synonyms>
+    <color>White to cream, Green, Red or redish or pink, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>47</id>
+    <location>North America, Europe</location>
+    <image>images/47.jpg</image>
+    
+    <title/>
+    <lat_title>Russula emetica</lat_title>
+    <synonyms>Colombe rouge, Kirschroter Speitubling, Russule mtique, Sickener</synonyms>
+    <color>White to cream, Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle, Mushroom slimy or sticky</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>64</id>
+    <location>North America, Europe</location>
+    <image>images/64.jpg</image>
+    
+    <title/>
+    <lat_title>Russula queletii</lat_title>
+    <synonyms>Fruity Brittlegill, Gooseberry Russula</synonyms>
+    <color>Violet or purple</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>51</id>
+    <location>North America, Europe</location>
+    <image>images/51.jpg</image>
+    
+    <title/>
+    <lat_title>Russula fragilis</lat_title>
+    <synonyms>Fragile Russula, Wechselfarbiger Speitubling</synonyms>
+    <color>Yellow, Green, Red or redish or pink, Violet or purple</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>49</id>
+    <location>North America, Europe</location>
+    <image>images/49.jpg</image>
+    
+    <title/>
+    <lat_title>Russula nauseosa</lat_title>
+    <synonyms>Geriefter Weichtubling</synonyms>
+    <color>Yellow, Green, Red or redish or pink, Violet or purple, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>131</id>
+    <location>North America, Europe</location>
+    <image>images/131.jpg</image>
+    
+    <title/>
+    <lat_title>Polyporus brumalis</lat_title>
+    <synonyms/>
+    <color>Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Pore material cannot be seperated from flesh of the cap</meat>
+    <leg>Lateral, rudimentary or absent</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>219</id>
+    <location>North America, Europe</location>
+    <image>images/219.jpg</image>
+    
+    <title/>
+    <lat_title>Cystoderma amianthinum</lat_title>
+    <synonyms>Amiant-Krnchenschirmling, Cystoderme Amiantac, Powdercap</synonyms>
+    <color>Yellow</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>236</id>
+    <location>Europe</location>
+    <image>images/236.jpg</image>
+    
+    <title/>
+    <lat_title>Marasmius alliaceus</lat_title>
+    <synonyms>Agaric porreau, Garlic Parachute, Knoblauch-Schwindling, Marasme alliac</synonyms>
+    <color>Grey to beige</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on wood, Grows on plant material/manure</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Stem much longer than cap diameter</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>224</id>
+    <location>North America, Europe</location>
+    <image>images/224.jpg</image>
+    
+    <title/>
+    <lat_title>Pholiota squarrosa</lat_title>
+    <synonyms>Pholiote squarreuse, Shaggy Scalycap, Sparriger Schppling</synonyms>
+    <color>Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on wood</grow>
+    <cap>Distinctly scaly</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>225</id>
+    <location>North America, Europe</location>
+    <image>images/225.jpg</image>
+    
+    <title/>
+    <lat_title>Pholiota aurivella</lat_title>
+    <synonyms/>
+    <color>Yellow, Orange</color>
+    <size>5-15cm</size>
+    <grow>Grows on wood</grow>
+    <cap>Distinctly scaly</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Mushroom slimy or sticky</meat>
+    <leg>Lateral, rudimentary or absent, Ring on stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>238</id>
+    <location>North America, Europe</location>
+    <image>images/238.jpg</image>
+    
+    <title/>
+    <lat_title>Agrocybe praecox</lat_title>
+    <synonyms>Frher Erdschppling, Pholiote prcoce, Spring Fieldcap</synonyms>
+    <color>White to cream, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground, Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Ring on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>1228</id>
+    <location>North America, Europe</location>
+    <image>images/1228.jpg</image>
+    
+    <title/>
+    <lat_title>Lactarius insulsus</lat_title>
+    <synonyms>Zonen-Milchling</synonyms>
+    <color>White to cream, Yellow, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Funnel shaped</cap>
+    <meat>Flesh exudes white or watery latex (milk) when cut, Flesh discolours when cut, bruised or damaged, Mushroom has distinct or odd smell (non mushroomy), Flesh granular or brittle</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>1172</id>
+    <location>North America, Europe</location>
+    <image>images/1172.jpg</image>
+    
+    <title/>
+    <lat_title>Verpa bohemica</lat_title>
+    <synonyms>Bhmische Verpel, Cseh kucsmagomba, Rapunzelverpel</synonyms>
+    <color>Brown</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Other</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>1174</id>
+    <location>North America, Europe</location>
+    <image>images/1174.jpg</image>
+    
+    <title/>
+    <lat_title>Gyromitra gigas</lat_title>
+    <synonyms>Snowbank False Morel</synonyms>
+    <color>Red or redish or pink, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Other</cap>
+    <meat>Flesh granular or brittle</meat>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>1175</id>
+    <location>North America, Europe</location>
+    <image>images/1175.jpg</image>
+    
+    <title/>
+    <lat_title>Gyromitra esculenta</lat_title>
+    <synonyms>False Morel, Fausse Morille, Frhjahrslorchel, Reds papsapkagomba</synonyms>
+    <color>Brown, Black or blackish</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Other</cap>
+    <meat>Flesh granular or brittle</meat>
+    <leg/>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>256</id>
+    <location>North America, Europe</location>
+    <image>images/256.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita phalloides</lat_title>
+    <synonyms>Amanite phalloide, Death Cap, Grner Knollenbltterpilz, Gyilkos galoca, Oronge ciqu vert</synonyms>
+    <color>White to cream, Green</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem, Volva on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>263</id>
+    <location>North America, Europe</location>
+    <image>images/263.jpg</image>
+    
+    <title/>
+    <lat_title>Inocybe fastigiata</lat_title>
+    <synonyms>Inocbye fastigi, Kegeliger Risspilz</synonyms>
+    <color>Yellow, Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>261</id>
+    <location>North America, Europe</location>
+    <image>images/261.jpg</image>
+    
+    <title/>
+    <lat_title>Inocybe geophylla</lat_title>
+    <synonyms>Erdblttriger Faserkopf, Inocbye terrestre, White Fibrecap</synonyms>
+    <color>White to cream</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat/>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>258</id>
+    <location>Europe</location>
+    <image>images/258.jpg</image>
+    
+    <title/>
+    <lat_title>Inocybe patouillardii</lat_title>
+    <synonyms>Inocbye de Patouillard, Inocybe erubescens, Red-staining Fibrecap, Ziegelroter Risspilz</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Bulbous base of stem, Simple stem</leg>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>262</id>
+    <location>North America, Europe</location>
+    <image>images/262.jpg</image>
+    
+    <title/>
+    <lat_title>Inocybe lacera</lat_title>
+    <synonyms>Gemeiner Wirrkopf, Inocbye dchir, Torn Fibrecap</synonyms>
+    <color>Brown</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Flesh discolours when cut, bruised or damaged</meat>
+    <leg>Simple stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>264</id>
+    <location>North America, Europe</location>
+    <image>images/264.jpg</image>
+    
+    <title/>
+    <lat_title>Tylopilus felleus</lat_title>
+    <synonyms>Bitter Bolete, Bolet amer, Bolet chicotin, Bolet de fiel, Gallenrhrling</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>254</id>
+    <location>North America, Europe</location>
+    <image>images/254.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita virosa</lat_title>
+    <synonyms>Amanite viteuse, Destroying Angel, Kupkalapu galoca, Wiesser Knollenbltterpilz</synonyms>
+    <color>White to cream</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground, Found in fields, lawns or on roadsides</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem, Volva on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>252</id>
+    <location>North America, Europe</location>
+    <image>images/252.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita muscaria</lat_title>
+    <synonyms>Amanite tue-mouches, Fausse Oronge, Fly Agaric, Lgyl galoca, Roter Fliegenpilz</synonyms>
+    <color>Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem, Volva on stem</leg>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>251</id>
+    <location>North America, Europe</location>
+    <image>images/251.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita pantherina</lat_title>
+    <synonyms>Amanite panthre, Panthercap, Pantherpilz, Prducgaloca</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem, Volva on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>253</id>
+    <location>North America, Europe</location>
+    <image>images/253.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita citrina</lat_title>
+    <synonyms>Amanita mappa, Amanite citrine, Citromgaloca, Citromgaloca, False Deathcap, Gelbe Knollenbltterpilz, Oronge citrine</synonyms>
+    <color>White to cream, Yellow</color>
+    <size/>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy), Other</meat>
+    <leg>Ring on stem, Volva on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>255</id>
+    <location>North America, Europe</location>
+    <image>images/255.jpg</image>
+    
+    <title/>
+    <lat_title>Amanita porphyria</lat_title>
+    <synonyms>Amanite porphyre, Bibor galoca, Grey Veiled Amanita, Porphyrbrauner Wulstling</synonyms>
+    <color>Brown, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg>Ring on stem, Volva on stem, Bulbous base of stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>272</id>
+    <location>North America, Europe</location>
+    <image>images/272.jpg</image>
+    
+    <title/>
+    <lat_title>Cortinarius speciosissimus</lat_title>
+    <synonyms>Cortinaire mortel, Cortinarius rubellus, Deadly Webcap, Prchtiger Schleierling</synonyms>
+    <color>Red or redish or pink</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat/>
+    <leg/>
+    <plates/>
+    <category>Deadly</category>
+  </mushroom>
+  <mushroom>
+    <id>269</id>
+    <location>North America, Europe</location>
+    <image>images/269.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma virgatum</lat_title>
+    <synonyms>Ashen Knight, Brennender Erdritterling, Tricolome verget</synonyms>
+    <color>Black or blackish, Grey to beige</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>260</id>
+    <location>North America, Europe</location>
+    <image>images/260.jpg</image>
+    
+    <title/>
+    <lat_title>Tricholoma sulphureum</lat_title>
+    <synonyms>Gas Agaric, Schwefelritterling, Sulphur Knight, Tricolome soufr</synonyms>
+    <color>Yellow</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Convex to shield shaped</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg/>
+    <plates/>
+    <category>Inedible</category>
+  </mushroom>
+  <mushroom>
+    <id>273</id>
+    <location>North America, Europe</location>
+    <image>images/273.jpg</image>
+    
+    <title/>
+    <lat_title>Paxillus involutus</lat_title>
+    <synonyms>Brown Rollrim, Kahler Krempling, Paxille enroul</synonyms>
+    <color>Brown</color>
+    <size>5-15cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Funnel shaped</cap>
+    <meat>Flesh discolours when cut, bruised or damaged, Mushroom slimy or sticky</meat>
+    <leg/>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  <mushroom>
+    <id>257</id>
+    <location>North America, Europe</location>
+    <image>images/257.jpg</image>
+    
+    <title/>
+    <lat_title>Lepiota cristata</lat_title>
+    <synonyms>Kleiner Stinkschirmling, Lpiote crpue, Lpiote crte, Stinking Dapperling</synonyms>
+    <color>White to cream, Red or redish or pink</color>
+    <size>Less than 5cm</size>
+    <grow>Grows in woods, Grows on the ground</grow>
+    <cap>Conical or nearly so</cap>
+    <meat>Mushroom has distinct or odd smell (non mushroomy)</meat>
+    <leg>Ring on stem</leg>
+    <plates/>
+    <category>Poisonous/Suspect</category>
+  </mushroom>
+  </mushrooms>

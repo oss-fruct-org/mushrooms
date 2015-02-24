@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.1
+Type=Application
+Terminal=false
+Name=Mushroom Guide
+Name[ru]=Энциклопедия грибов
+Exec=invoker --single-instance --type=d /opt/mushrooms/bin/mushrooms
+Icon=mushrooms
+X-Window-Icon=mushrooms
+X-HildonDesk-ShowInToolbar=true
+X-Osso-Type=application/x-executable
