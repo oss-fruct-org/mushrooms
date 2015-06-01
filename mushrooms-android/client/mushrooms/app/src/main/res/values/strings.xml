@@ -219,5 +219,9 @@ http://firstaidreddeer.ca/ \n
 
     <!-- Текст слова категория-->
     <string name="activity_description_category_word"><b>Category:</b> </string>
+    <string name="title_activity_description_recipes">DescriptionRecipesActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_overview_recipes">OverviewRecipesActivity</string>
+    <string name="title_activity_recipes">RecipesActivity</string>
 
 </resources>

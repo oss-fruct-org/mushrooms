@@ -165,5 +165,8 @@ http://firstaidreddeer.ca/ \n
 
     <!-- Текст слова категория-->
     <string name="activity_description_category_word"><b>Категория:</b> </string>
+    <string name="no_records">В таблице нет записей</string>
+    <string name="search_hint">Искать записи</string>
+    <string name="text">Введите текст</string>
 
 </resources>
