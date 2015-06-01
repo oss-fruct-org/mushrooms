@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mushrooms</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_overview">OverviewActivity</string>
+    <string name="title_activity_description">DescriptionActivity</string>
+    <string name="title_activity_firstaid">Fist Aid</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <string name="add">Add</string>
+    <string name="text">Enter text</string>
+    <string name="no_records">There are no records in the table</string>
+    <string name="search_hint">Search the records</string>
+    <string name="search">Search</string>
+    <string name="listviewphoto">Search</string>
+
+
+    <!-- Подсказка поиска -->
+    <string name="action_search">Поиск</string>
+
+    <!-- Кнопки гланого меню -->
+    <string name="activity_main_actionbar_title">Mushrooms &amp; berries</string>
+    <string name="activity_main_button_mushrooms">Mushrooms</string>
+    <string name="activity_main_button_berries">Berries</string>
+    <string name="activity_main_button_firstaid">First Aid</string>
+    <string name="activity_main_button_recipes">Recipes</string>
+    <string name="activity_main_button_about">About</string>
+    <string name="activity_main_button_Update">Update</string>
+
+    <!-- Кнопки в зоне поика главного меню-->
+    <string name="activity_main_button_lastmushrooms">All mushrooms</string>
+    <string name="activity_main_button_lastberries">All berries</string>
+    <string name="activity_main_button_lastrecipes">All recipes</string>
+
+    <!-- Заголовки в зоне поиска -->
+    <string name="activity_main_title_mushrooms">Mushrooms</string>
+    <string name="activity_main_title_berries">Berries</string>
+    <string name="activity_main_title_recipes">Recipes</string>
+
+    <!-- Заголовки в зоне поиска в случае неудачного поиска -->
+    <string name="activity_main_title_mushrooms_not">Mushrooms Ø</string>
+    <string name="activity_main_title_berries_not">Berries Ø</string>
+    <string name="activity_main_title_recipes_not">Recipes Ø</string>
+
+    <!-- Кнопки в активити рецепты -->
+    <string name="activity_recipes_button_mushrooms">Mushrooms</string>
+    <string name="activity_recipes_button_berries">Berries</string>
+
+    <!-- Категории грибов -->
+    <string name="activity_overview_title_mushrooms">Mushrooms</string>
+    <string-array name="activity_overview_array_mushrooms">
+        <item>All mushrooms</item>
+        <item>Edible</item>
+        <item>Conditionally edible</item>
+        <item>Poisonous</item>
+    </string-array>
+
+    <!-- Категории ягод -->
+    <string name="activity_overview_title_berries">Berries</string>
+    <string-array name="activity_overview_array_berries">
+        <item>All berries</item>
+        <item>Garden</item>
+        <item>Wild</item>
+    </string-array>
+
+    <!-- Категории рецептов ягод -->
+    <string name="activity_overview_title_recipes_berries">Recipes berries</string>
+    <string-array name="activity_overview_array_recipes_berries">
+        <item>All recipes berries</item>
+        <item>Jam from berries</item>
+        <item>Compote of berries</item>
+        <item>Pastries with berries</item>
+        <item>Salads with berries</item>
+    </string-array>
+
+    <!-- Категории рецептов грибов -->
+    <string name="activity_overview_title_recipes_mushrooms">Recipes mushrooms</string>
+    <string-array name="activity_overview_array_recipes_mushrooms">
+        <item>All recipes mushrooms</item>
+        <item>The first dish with mushrooms</item>
+        <item>The second dish with mushrooms</item>
+        <item>Salad with mushrooms</item>
+        <item>Appetizer with mushrooms</item>
+        <item>Baking with mushrooms</item>
+        <item>Fried mushrooms</item>
+        <item>Mushroom sauce</item>
+        <item>Canned mushrooms</item>
+        <item>Liqueurs on mushrooms</item>
+        <item>Pickled mushrooms</item>
+        <item>Drying mushrooms</item>
+    </string-array>
+
+    <!-- Первая помощь текст в описании-->
+    <string name="activity_description_helpmes">Attention! It can lead to poisoning! Click to read the first aid rules.</string>
+
+    <!-- Текст первой помощи-->
+    <string name="activity_firstaid_text">
+    <big><b><big><big>First aid management of food poisoning</big></big></b></big>\n
+<b><big><big>Signs and symptoms of food poisoning</big></big></b>\n
+<i>(can develop as rapid as within 30mins. Following ingestion)</i>\n
+\n
+• Abdominal cramps\n
+\n
+• Diarrhea – ranges from simple watery diarrhea to frank blood in stools\n
+\n
+• Nausea\n
+\n
+• Vomiting\n
+\n
+• Dehydration\n
+\n
+• Fever\n
+\n
+• Blurred vision\n
+\n
+• Double vision\n
+\n
+• Difficulty in speaking\n
+\n
+• Difficulty in swallowing\n
+\n
+• Muscle weakness and paralysis\n
+\n
+• Difficulty in breathing\n
+\n
+Most cases of food poisoning are self-limiting. Proper first aid care will be the only modality of management required. However, first aid training should render proper knowledge on identification of danger signs and symptoms that requires prompt admission to hospital.\n
+Signs and symptoms that require urgent hospitalization\n
+\n
+• Development of neurological features described above under botulism\n
+\n
+• Difficulty in breathing\n
+\n
+• Collapse and loss of consciousness\n
+\n
+• Features of severe dehydration – e.g. confusion, no urine output, sunken eyes, dry mouth etc.\n
+\n
+• Severe vomiting or diarrhea\n
+\n
+• Vomiting blood or passage of blood in stools\n
+\n
+• Fever > 1020F\n
+\n
+• Development of symptoms following seafood or mushroom ingestion\n
+\n
+• Development of abdominal swelling\n
+\n
+• Children • Pregnant women.\n
+\n
+<b><big><big>First aid management</big></big></b>\n
+\n
+1. Reassure the patient as most are self-limiting conditions.\n
+\n
+2. Look for danger signs and call for medical help immediately.\n
+\n
+3. If unconscious; secure the airway by head tilt, chin lift and jaw thrust maneuvers. Check for breathing and circulation. Start CPR immediately and follow basic life support guidelines.\n
+\n
+4. Control vomiting; do not give solid foods until vomiting stops. Give frequent sips of small amount of water to keep patient hydrated. Keep patient lying on side to prevent aspiration.\n
+\n
+5. Oral rehydration solutions can be used much effectively for rehydration.\n
+\n
+6. Avoid alcohol, caffeine and sugary drinks.\n
+\n
+7. Light diet is preferred in first days of illness.\n
+\n
+8. Always watch for signs of dehydration, specially with children. Urine output is a good indicator of hydration status.\n
+\n
+9. Oral anti-diarrheal medications are not recommended. In children avoid these entirely. These may slow elimination of toxins worsening the condition.\n
+\n
+10. When vomiting and diarrhea settles, start introducing normal solid foods gradually.\n
+\n
+11. Prebiotics present in certain foods (e.g. lactobacillus – in yoghurt) help the recovery of damaged intestines and will shorten period of diarrhea.\n
+\n
+12. Get plenty of rest for the patient.\n
+\n
+<b><big><big>Prevention</big></big></b>\n
+\n
+1. Wash hands thoroughly before preparing and eating food.\n
+\n
+2. Do not eat suspicious looking food items.\n
+\n
+3. Buy prepared food only from safe outlets that adhere to sanitary guidelines.\n
+\n
+4. Check the expiry dates on packaging before consuming food.\n
+\n
+5. Do not buy canned foods that look damaged, bloated up or crushed.\n
+\n
+6. Keep raw foods away from prepared meals.\n
+\n
+7. Refrigerate or freeze foods properly. Adhere to the instructions given by the manufacturer.\n
+\n
+8. Be careful on eating previously un-encountered exotic foods. Specially mushrooms and seafood.\n
+        </string>
+
+    <!-- Текст about-->
+    <string name="activity_about_text">
+Your guide into the northern forest world. The App contains descriptions of more than 300 mushrooms, berries and recipes of dishes that can be made of them. Does not require an Internet connection. Let\'s love mushrooms as we have loved them!\n
+PetrSU, MushroomsGroup, 2015.\n
+Developers:\n
+Feyer Nikolay Sergeyevich\n
+Makarov Vladimir Sergeyevich\n
+Obozov Alexander Sergeyevich\n
+Sablina Anastasiya Alekseyevna \n
+Sheryakov Artyom Val\'eryevich\n
+With the support of Kulakov Kirill Alexandrovich, Kolosov Alexander Sergeyevich and God.\n
+Sources:\n
+http://vsegriby.ru/ \n
+https://en.wikipedia.org/ \n
+https://ru.wikipedia.org/ \n
+http://simptomer.ru/ \n
+http://www.medicinform.net/ \n
+http://www.neboleem.net/ \n
+http://firstaidreddeer.ca/ \n
+
+    </string>
+
+    <!-- Текст слова категория-->
+    <string name="activity_description_category_word"><b>Category:</b> </string>
+
+</resources>

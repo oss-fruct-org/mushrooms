@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="blue" type="color">#1c4356</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="green_dark" type="color">#FF669900</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="oceanblue" type="color">#FF1C4356</item>
+    <item name="granite" type="color">#FF303741</item>
+    <item name="silver" type="color">#FFc6c6c6</item>
+    <item name="abdelkerimbeard" type="color">#FFd6d3d3</item>
+    <item name="smokywhite" type="color">#FFf3f3f3</item>
+    <item name="paleblue" type="color">#FFe3e4e6</item>
+    <item name="black" type="color">#FF000000</item>
+
+</resources>

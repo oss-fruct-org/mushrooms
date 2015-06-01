@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/paleblue">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_mushrooms"
+            android:id="@+id/buttonMushrooms"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonMushroomsClick"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text"         />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_berries"
+            android:id="@+id/buttonBerries"
+            android:layout_below="@+id/buttonMushrooms"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonBerriesClick"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_firstaid"
+            android:id="@+id/buttonFirstaid"
+            android:layout_below="@+id/buttonBerries"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonFirstaidClick"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_recipes"
+            android:id="@+id/buttonRecipes"
+            android:layout_below="@+id/buttonFirstaid"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonRecipesClick"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/activity_main_button_about"
+            android:id="@+id/buttonAbout"
+            android:onClick="onButtonAboutClick"
+            android:layout_below="@+id/buttonRecipes"
+            android:background="@drawable/button_menu"
+            android:src="@drawable/about"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonUpdate"
+            android:onClick="onButtonUpgradeClick"
+            android:layout_below="@+id/buttonRecipes"
+            android:background="@drawable/button_menu"
+            android:src="@drawable/update"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/activity_main_button_Update" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollSearchMain">
+    <RelativeLayout
+        android:id="@+id/lastLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_title_mushrooms"
+            android:id="@+id/mushroomTitleMain"
+            android:textColor="@color/oceanblue"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <ListView android:id="@+id/lastMushroomsList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="0dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:layout_below="@+id/mushroomTitleMain"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_lastmushrooms"
+            android:id="@+id/lastMushroomsButton"
+            android:onClick="onLastMushroomsButtonClick"
+            android:layout_below="@+id/lastMushroomsList"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_title_berries"
+            android:id="@+id/berriesTitleMain"
+            android:textColor="@color/oceanblue"
+            android:layout_below="@+id/lastMushroomsButton"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <ListView android:id="@+id/lastBerriesList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="0dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:layout_below="@+id/berriesTitleMain"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_lastberries"
+            android:id="@+id/lastBerriesButton"
+            android:onClick="onLastBerriesButtonClick"
+            android:layout_below="@+id/lastBerriesList"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_title_recipes"
+            android:id="@+id/recipesTitleMain"
+            android:textColor="@color/oceanblue"
+            android:layout_below="@+id/lastBerriesButton"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <ListView android:id="@+id/lastRecipesList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="0dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:layout_below="@+id/recipesTitleMain"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_button_lastrecipes"
+            android:id="@+id/lastRecipesButton"
+            android:onClick="onLastRecipesButtonClick"
+            android:layout_below="@+id/lastRecipesList"
+            android:background="@drawable/button_menu"
+            android:textColor="@drawable/button_menu_text" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

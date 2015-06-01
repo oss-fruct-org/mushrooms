@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- эйблы активити -->
+    <string name="app_name">Mushrooms</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_overview">OverviewActivity</string>
+    <string name="title_activity_description">DescriptionActivity</string>
+    <string name="title_activity_firstaid">Fist Aid</string>
+    <string name="title_activity_recipes">RecipesActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_description_recipes">DescriptionRecipesActivity</string>
+    <string name="title_activity_overview_recipes">OverviewRecipesActivity</string>
+
+    <!-- Открытие, закрытие слайд меню -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Описания -->
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="listviewphoto">Photo</string>
+
+    <!-- Подсказка поиска -->
+    <string name="action_search">Поиск</string>
+
+    <!-- Кнопки гланого меню -->
+    <string name="activity_main_actionbar_title">Грибы и ягоды</string>
+    <string name="activity_main_button_mushrooms">Грибы</string>
+    <string name="activity_main_button_berries">Ягоды</string>
+    <string name="activity_main_button_firstaid">Первая помощь</string>
+    <string name="activity_main_button_recipes">Рецепты</string>
+    <string name="activity_main_button_about">О программе</string>
+    <string name="activity_main_button_Update">Обновить</string>
+
+    <!-- Кнопки в зоне поика главного меню-->
+    <string name="activity_main_button_lastmushrooms">Все грибы</string>
+    <string name="activity_main_button_lastberries">Все ягоды</string>
+    <string name="activity_main_button_lastrecipes">Все рецепты</string>
+
+    <!-- Заголовки в зоне поиска -->
+    <string name="activity_main_title_mushrooms">Грибы</string>
+    <string name="activity_main_title_berries">Ягоды</string>
+    <string name="activity_main_title_recipes">Рецепты</string>
+
+    <!-- Заголовки в зоне поиска в случае неудачного поиска -->
+    <string name="activity_main_title_mushrooms_not">Грибы Ø</string>
+    <string name="activity_main_title_berries_not">Ягоды Ø</string>
+    <string name="activity_main_title_recipes_not">Рецепты Ø</string>
+
+    <!-- Кнопки в активити рецепты -->
+    <string name="activity_recipes_button_mushrooms">Грибы</string>
+    <string name="activity_recipes_button_berries">Ягоды</string>
+
+    <!-- Категории грибов -->
+    <string name="activity_overview_title_mushrooms">Грибы</string>
+    <string-array name="activity_overview_array_mushrooms">
+        <item>Все грибы</item>
+        <item>Съедобные</item>
+        <item>Условно-съедобные</item>
+        <item>Ядовитые</item>
+    </string-array>
+
+    <!-- Категории яод -->
+    <string name="activity_overview_title_berries">Ягоды</string>
+    <string-array name="activity_overview_array_berries">
+        <item>Все ягоды</item>
+        <item>Садовые</item>
+        <item>Дикие</item>
+    </string-array>
+
+    <!-- Категории рецептов ягод -->
+    <string name="activity_overview_title_recipes_berries">Рецепты ягод</string>
+    <string-array name="activity_overview_array_recipes_berries">
+        <item>Все рецепты ягод</item>
+        <item>Варенье из ягод</item>
+        <item>Компоты из ягод</item>
+        <item>Выпечка с ягодами</item>
+        <item>Салаты с ягодами</item>
+    </string-array>
+
+    <!-- Категории рецептов грибов -->
+    <string name="activity_overview_title_recipes_mushrooms">Рецепты грибов</string>
+    <string-array name="activity_overview_array_recipes_mushrooms">
+        <item>Все рецепты грибов</item>
+        <item>Первое с грибами</item>
+        <item>Второе с грибами</item>
+        <item>Салаты с грибами</item>
+        <item>Закуски с грибами</item>
+        <item>Выпечка с грибами</item>
+        <item>Жаренья грибов</item>
+        <item>Соусы из грибов</item>
+        <item>Консервирование грибов</item>
+        <item>Настойки на грибах</item>
+        <item>Соления грибов</item>
+        <item>Сушка грибов</item>
+    </string-array>
+
+    <!-- Первая помощь текст в описании-->
+    <string name="activity_description_helpmes">Внимание! Может привести к отравлению! Нажмите, чтобы ознакомиться с правилами первой помощи.</string>
+
+    <!-- Текст первой помощи-->
+    <string name="activity_firstaid_text">
+    <hr><b><big><big>Правила оказания первой помощи при пищевых отравлениях.</big></big></b></hr>\n
+    <i>Это отравления составными частями самой пищи, попавшими туда случайно в процессе произрастания или первоначальной обработки пищевого сырья, а также в процессе изготовления и хранения пищевых продуктов.</i>\n
+    <hr><b><big><big>Классификация:</big></big></b></hr>\n
+    1. пищевые отравления бактериального происхождения – отравления, вызванные микробами, пищевые токсикоинфекции (ботулизм, стафилококк);\n
+    2. пищевые отравления небактериального происхождения – отравление ядовитыми продуктами (животного и растительного происхождения).\n
+    <hr><b><big><big> Симптомы пищевого отравления</big></big></b></hr>\n
+    -повышение температуры\n
+    -потеря аппетита\n
+    -жидкий стул\n
+    -постоянные призывы к дефекации\n
+    -затуманенное зрение\n
+    -тошнота, рвота\n
+    -повышенное слюноотделение\n
+    -отдельные расстройства в работе ЦНС или же полный отказ всей нервной системы, что часто случается при ботулизме.\n
+\n
+    Первые симптомы пищевого отравления появляются уже через 30-40 минут после употребления зараженных продуктов питания. В течение 2-3 следующих дней они нарастают.\n
+\n
+    При пищевых отравлениях главное – быстро доставить больного в лечебное заведение и в случае массовых отравлений информировать об этом органы санэпиднадзора.\n
+\n
+    На месте происшествия следует:\n
+    -установить причину отравления\n
+    -вид токсического вещества\n
+    -его количество\n
+    -путь поступления в организм\n
+    -по возможности время отравления.\n
+\n
+    Все пострадавшие с клинической картиной острого отравления подлежат срочной госпитализации в специализированные центры по лечению отравлений или в больницы скорой помощи.\n
+\n
+    Первая медицинская помощь при острых отравлениях имеет огромное значение, способствует более легкому течению заболевания, вызванного отравлением, и нередко предотвращает возможный смертельный исход. Методы оказания доврачебной помощи зависят как от пути проникновения яда в организм, так и от его химического состава отравляющего вещества. Основные принципы – прекращение поступления яда, удаление отравляющего вещества, поддержание важных жизненных функций и скорейшая госпитализация.\n
+    <hr><b><big><big>Оказание доврачебной помощи</big></big></b></hr>\n
+    -При появлении первых симптомов, указывающих на отравление, следует прибегнуть к процедуре промывания желудка. Проводится она до тех пор, пока рвотные массы не сменятся выходом вместо них воды. Для промывания желудка применяется 2%-ный раствор соды, однако при ее отсутствии подойдет и обычная кипяченая вода.\n
+    -В течение всего времени пребывания в состоянии пищевой интоксикации, больному следует давать обильное питье в объеме не менее двух-трех литров жидкости за сутки. Врачи в этом случае рекомендуют использовать воду с добавлением поваренной соли (1л – 1 ч.л.), сахара (1л – 2 ч.л.), пищевой соды (1л – 1 ч.л.). Кроме этого следует также использовать сухие смеси для регидратации (например, Регидрон).\n
+    -Необходимо отказаться от употребления в этот период раздражающей и трудноперевариваемой пищи.\n
+    -Назначение противомикробных препаратов производится исключительно врачом, при этом необходимость в них актуальна лишь в тяжелых проявлениях интоксикации.\n
+    -При сильной диарее (т.е. поносе) в качестве симптоматического медпрепарата может быть использован, например, Лоперамид.\n
+    -При пищевом отравлении беременной или ребенка в некоторых случаях возможна госпитализация в качестве необходимой меры восстановления организма и устранения основных проявлений отравления.\n
+    -Обращение к врачу требуется в обязательном порядке в случае если пищевое отравление, первая помощь при котором была своевременно оказана больному, не привела к улучшению, а симптоматика проявляется крайне остро или усугубляется. Помимо этого, обратиться к врачу нужно при длительности состояния с актуальной для него симптоматикой дольше недели.\n
+    -По причине перенесенного отравления впоследствии может возникнуть дисбактериоз, лечение которого производится в отдельном порядке.\n
+</string>
+
+    <!-- Текст about-->
+    <string name="activity_about_text">
+Ваш проводник в мир даров северного леса. Приложение содержит описание более трёхсот видов грибов, ягод, а также рецептов приготовления блюд из них. Не требует подключения к интернету. Полюбите грибы так, как полюбили их мы!\n
+ПетрГУ, Грибы, 2015\n
+Разработчики:\n
+Макаров Владимир Сергеевич\n
+Обозов Александр Сергеевич\n
+Саблина Анастасия Алексеевна\n
+Феер Николай Сергеевич\n
+Шеряков Артём Валерьевич\n
+При поддержке Кулакова Кирилла Александровича, Колосова Александра Сергеевича и Бога.\n
+Источники:\n
+http://vsegriby.ru/ \n
+https://en.wikipedia.org/ \n
+https://ru.wikipedia.org/ \n
+http://simptomer.ru/ \n
+http://www.medicinform.net/ \n
+http://www.neboleem.net/ \n
+http://firstaidreddeer.ca/ \n
+
+    </string>
+
+    <!-- Текст слова категория-->
+    <string name="activity_description_category_word"><b>Категория:</b> </string>
+
+</resources>
