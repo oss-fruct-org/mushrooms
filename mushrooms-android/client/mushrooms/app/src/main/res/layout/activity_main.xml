@@ -17,7 +17,9 @@
             android:layout_centerHorizontal="true"
             android:onClick="onButtonMushroomsClick"
             android:background="@drawable/button_menu"
-            android:textColor="@drawable/button_menu_text"         />
+            android:textColor="@drawable/button_menu_text"
+            android:textAllCaps="false"
+            />
 
         <Button
             android:layout_width="wrap_content"
@@ -28,7 +30,8 @@
             android:layout_centerHorizontal="true"
             android:onClick="onButtonBerriesClick"
             android:background="@drawable/button_menu"
-            android:textColor="@drawable/button_menu_text" />
+            android:textColor="@drawable/button_menu_text"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="wrap_content"
@@ -39,7 +42,8 @@
             android:layout_centerHorizontal="true"
             android:onClick="onButtonFirstaidClick"
             android:background="@drawable/button_menu"
-            android:textColor="@drawable/button_menu_text" />
+            android:textColor="@drawable/button_menu_text"
+            android:textAllCaps="false"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -50,7 +54,8 @@
             android:layout_centerHorizontal="true"
             android:onClick="onButtonRecipesClick"
             android:background="@drawable/button_menu"
-            android:textColor="@drawable/button_menu_text" />
+            android:textColor="@drawable/button_menu_text"
+            android:textAllCaps="false"/>
 
         <ImageButton
             android:layout_width="wrap_content"
