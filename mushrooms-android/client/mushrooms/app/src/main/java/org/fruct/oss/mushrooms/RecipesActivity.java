@@ -54,8 +54,8 @@ public class RecipesActivity extends Activity {
     }
 
     public void onButtonRecipesMushroomsClick(View view){
-
-        Intent intent = new Intent(RecipesActivity.this, OverviewRecipesActivity.class);
+        Intent intent = new Intent(RecipesActivity.this, OverviewActivity.class);
+        intent.putExtra("type", "recipe");
         intent.putExtra("typeR", "Mushrooms");
         intent.putExtra("search", getIntent().getStringExtra("search"));
         startActivity(intent);
@@ -63,7 +63,8 @@ public class RecipesActivity extends Activity {
 
     public void onButtonRecipesBerriesClick(View view){
 
-        Intent intent = new Intent(RecipesActivity.this, OverviewRecipesActivity.class);
+        Intent intent = new Intent(RecipesActivity.this, OverviewActivity.class);
+        intent.putExtra("type", "recipe");
         intent.putExtra("typeR", "Berries");
         intent.putExtra("search", getIntent().getStringExtra("search"));
         startActivity(intent);

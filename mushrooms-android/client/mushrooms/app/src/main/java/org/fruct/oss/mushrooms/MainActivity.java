@@ -69,9 +69,9 @@ public class MainActivity extends ActionBarActivity {
 
     DataBase base;
     SQLiteDatabase dataBase;
-    ArrayAdapter<String> adapterMushrooms;
-    ArrayAdapter<String> adapterBerries;
-    ArrayAdapter<String> adapterRecipes;
+    ListCursorAdapter adapterMushrooms;
+    ListCursorAdapter adapterBerries;
+    ListCursorAdapter adapterRecipes;
 
     Boolean searchClick;
 
@@ -281,6 +281,12 @@ public class MainActivity extends ActionBarActivity {
                 .getDrawable(android.R.drawable.ic_menu_close_clear_cancel);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        closeAdapters();
+    }
+
     protected void onStart() {
         super.onStart();
 
@@ -292,102 +298,76 @@ public class MainActivity extends ActionBarActivity {
         super.onPause();
     }
 
-    private void searchStart(String str){
-
-        List<Bitmap> listMushroomsImg = new ArrayList<>();
-        List<Bitmap> listBerriesImg = new ArrayList<>();
-        List<Bitmap> listRecipesImg = new ArrayList<>();
+    private void searchStart(String str) {
+        closeAdapters();
 
         String columnNameChoose = "nameEN";
-        List<String> listMushrooms = new ArrayList<>();
-        List<String> listBerries = new ArrayList<>();
-        List<String> listRecipes = new ArrayList<>();
-        ListView catalog ;
-        String rowsShow = "3";
-
-        int countRow = 0;
-        RelativeLayout.LayoutParams params;
-
-        String secondStr = str;
-
-        if (str.length() > 0){
-
-            secondStr = Character.toUpperCase(str.charAt(0))+ str.substring(1);
+        if (getResources().getConfiguration().locale.getLanguage().compareTo("ru") == 0) {
+            columnNameChoose = "nameRU";
         }
 
-        if (getResources().getConfiguration().locale.getLanguage().compareTo("ru") == 0){
+        ListView catalog;
+        String rowsShow = "3";
 
-            columnNameChoose = "nameRU";
+        int countRow;
+        RelativeLayout.LayoutParams params;
+        String secondStr = str;
+
+        if (str.length() > 0) {
+            secondStr = Character.toUpperCase(str.charAt(0)) + str.substring(1);
         }
 
         Cursor cursor = dataBase.query(DataBase.TABLE_MUSHROOMS,
                 null,
                 columnNameChoose + " LIKE ? OR " + columnNameChoose + " LIKE ?",
-                new String[] {"%" + str + "%", "%" + secondStr + "%"},
+                new String[]{"%" + str + "%", "%" + secondStr + "%"},
                 null,
                 null,
                 columnNameChoose,
                 rowsShow
         );
 
-        while (cursor.moveToNext()) {
-            int id = cursor.getInt(cursor.getColumnIndex("_id"));
-            String name = cursor.getString(cursor
-                    .getColumnIndex(columnNameChoose));
-            Log.i("LOG_TAG", "ROW " + id + " HAS NAME " + name);
+        countRow = cursor.getCount();
 
-            byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-            Bitmap img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length);
-            img = Bitmap.createScaledBitmap(img, metrics.widthPixels/6 , metrics.widthPixels/6 , true);
+        switch (countRow) {
+        case 2:
+            params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6) * 2;
+            mushroomTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_mushrooms));
+            break;
 
-            listMushroomsImg.add(img);
-            listMushrooms.add(name);
-            countRow++;
-        }
-        cursor.close();
+        case 1:
+            params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6);
+            mushroomTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_mushrooms));
+            break;
 
-        switch (countRow){
-            case 2:
-                params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6) * 2;
-                mushroomTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_mushrooms));
-                break;
+        case 0:
+            params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
+            params.height = 0;
+            mushroomTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_mushrooms_not));
+            params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
+            params.height = 0;
+            break;
 
-            case 1:
-                params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6);
-                mushroomTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_mushrooms));
-                break;
-
-            case 0:
-                params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
-                params.height = 0;
-                mushroomTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_mushrooms_not));
-                params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
-                params.height = 0;
-                break;
-
-            default:
-
-                params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
-                params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
-                params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
-                params.height = 40;
-                mushroomTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_mushrooms));
-                break;
+        default:
+            params = (RelativeLayout.LayoutParams) lastMushroomsList.getLayoutParams();
+            params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
+            params = (RelativeLayout.LayoutParams) lastMushroomsButton.getLayoutParams();
+            params.height = 40;
+            mushroomTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_mushrooms));
+            break;
         }
 
-        countRow = 0;
-
-        adapterMushrooms = new ListAdapter(this, listMushrooms, listMushroomsImg, metrics, true);
+        adapterMushrooms = new ListCursorAdapter(this, cursor, columnNameChoose, true, metrics);
 
         catalog = (ListView) findViewById(R.id.lastMushroomsList);
         catalog.setAdapter(adapterMushrooms);
@@ -396,150 +376,136 @@ public class MainActivity extends ActionBarActivity {
         cursor = dataBase.query(DataBase.TABLE_BERRIES,
                 null,
                 columnNameChoose + " LIKE ? OR " + columnNameChoose + " LIKE ?",
-                new String[] {"%" + str + "%", "%" + secondStr + "%"},
+                new String[]{"%" + str + "%", "%" + secondStr + "%"},
                 null,
                 null,
                 columnNameChoose,
                 rowsShow
         );
 
-        while (cursor.moveToNext()) {
-            int id = cursor.getInt(cursor.getColumnIndex("_id"));
-            String name = cursor.getString(cursor
-                    .getColumnIndex(columnNameChoose));
-            Log.i("LOG_TAG", "ROW " + id + " HAS NAME " + name);
+        countRow = cursor.getCount();
 
-            byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-            Bitmap img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length);
-            img = Bitmap.createScaledBitmap(img, metrics.widthPixels/6 , metrics.widthPixels/6 , true);
+        switch (countRow) {
+        case 2:
+            params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6) * 2;
+            berriesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_berries));
+            break;
 
-            listBerriesImg.add(img);
-            listBerries.add(name);
-            countRow ++;
-        }
-        cursor.close();
+        case 1:
+            params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6);
+            berriesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_berries));
+            break;
 
-        switch (countRow){
-            case 2:
-                params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6) * 2;
-                berriesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_berries));
-                break;
+        case 0:
+            params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
+            params.height = 0;
+            berriesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_berries_not));
+            params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
+            params.height = 0;
+            break;
 
-            case 1:
-                params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6);
-                berriesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_berries));
-                break;
+        default:
 
-            case 0:
-                params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
-                params.height = 0;
-                berriesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_berries_not));
-                params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
-                params.height = 0;
-                break;
-
-            default:
-
-                params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
-                params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
-                params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
-                params.height = 40;
-                berriesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_berries));
-                break;
+            params = (RelativeLayout.LayoutParams) lastBerriesList.getLayoutParams();
+            params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
+            params = (RelativeLayout.LayoutParams) lastBerriesButton.getLayoutParams();
+            params.height = 40;
+            berriesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_berries));
+            break;
         }
 
-        countRow = 0;
-
-
-        adapterBerries = new ListAdapter(this, listBerries, listBerriesImg, metrics, true);
+        adapterBerries = new ListCursorAdapter(this, cursor, columnNameChoose, true, metrics);
 
         catalog = (ListView) findViewById(R.id.lastBerriesList);
         catalog.setAdapter(adapterBerries);
         catalog.setOnItemClickListener(new CatalogBerriesItemClickListener());
 
-
         cursor = dataBase.query(DataBase.TABLE_RECIPES,
                 null,
                 columnNameChoose + " LIKE ? OR " + columnNameChoose + " LIKE ?",
-                new String[] {"%" + str + "%", "%" + secondStr + "%"},
+                new String[]{"%" + str + "%", "%" + secondStr + "%"},
                 null,
                 null,
                 columnNameChoose,
                 rowsShow
         );
 
-        while (cursor.moveToNext()) {
-            int id = cursor.getInt(cursor.getColumnIndex("_id"));
-            String name = cursor.getString(cursor
-                    .getColumnIndex(columnNameChoose));
-            Log.i("LOG_TAG", "ROW " + id + " HAS NAME " + name);
+        countRow = cursor.getCount();
 
-            byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-            Bitmap img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length);
-            img = Bitmap.createScaledBitmap(img, metrics.widthPixels/6 , metrics.widthPixels/6 , true);
+        switch (countRow) {
+        case 2:
+            params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6) * 2;
+            recipesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_recipes));
+            break;
 
-            listRecipesImg.add(img);
-            listRecipes.add(name);
-            countRow ++;
-        }
-        cursor.close();
+        case 1:
+            params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
+            params.height = 0;
+            params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
+            params.height = (metrics.widthPixels / 6);
+            recipesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_recipes));
+            break;
 
-        switch (countRow){
-            case 2:
-                params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6) * 2;
-                recipesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_recipes));
-                break;
+        case 0:
+            params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
+            params.height = 0;
+            recipesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_recipes_not));
+            params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
+            params.height = 0;
+            break;
 
-            case 1:
-                params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
-                params.height = 0;
-                params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
-                params.height = (metrics.widthPixels / 6);
-                recipesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_recipes));
-                break;
+        default:
 
-            case 0:
-                params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
-                params.height = 0;
-                recipesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_recipes_not));
-                params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
-                params.height = 0;
-                break;
-
-            default:
-
-                params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
-                params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
-                params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
-                params.height = 40;
-                recipesTitleMain.setText(getResources().getString
-                        (R.string.activity_main_title_recipes));
-                break;
+            params = (RelativeLayout.LayoutParams) lastRecipesList.getLayoutParams();
+            params.height = ((metrics.widthPixels / 6) * 3) + metrics.heightPixels / 100;
+            params = (RelativeLayout.LayoutParams) lastRecipesButton.getLayoutParams();
+            params.height = 40;
+            recipesTitleMain.setText(getResources().getString
+                    (R.string.activity_main_title_recipes));
+            break;
         }
 
         Log.d("TAG", columnNameChoose);
-        adapterRecipes = new ListAdapter(this, listRecipes, listRecipesImg, metrics, true);
-        //list.clear();
+        adapterRecipes = new ListCursorAdapter(this, cursor, columnNameChoose, true, metrics);
 
         catalog = (ListView) findViewById(R.id.lastRecipesList);
         catalog.setAdapter(adapterRecipes);
         catalog.setOnItemClickListener(new CatalogRecipesItemClickListener());
+    }
+
+    private void closeAdapters() {
+        ((ListView) findViewById(R.id.lastRecipesList)).setAdapter(null);
+        ((ListView) findViewById(R.id.lastBerriesList)).setAdapter(null);
+        ((ListView) findViewById(R.id.lastMushroomsList)).setAdapter(null);
+
+        if (adapterBerries != null)
+            adapterBerries.close();
+
+        if (adapterMushrooms != null)
+            adapterMushrooms.close();
+
+        if (adapterRecipes != null)
+            adapterRecipes.close();
+
+        adapterBerries = null;
+        adapterMushrooms = null;
+        adapterRecipes = null;
     }
 
     // Кнопка грибы
@@ -694,6 +660,8 @@ Log.d("TAG", "VER: " + Integer.toString(DataBase.getVersiion()) + " | " + Intege
         mSearchEt.setText("");
         mSearchAction.setIcon(mIconOpenSearch);
         mSearchOpened = false;
+
+        closeAdapters();
     }
 
     private class CatalogMushroomsItemClickListener implements ListView.OnItemClickListener {

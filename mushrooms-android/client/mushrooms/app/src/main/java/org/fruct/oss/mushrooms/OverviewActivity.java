@@ -19,7 +19,6 @@ import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -47,13 +46,13 @@ public class OverviewActivity extends ActionBarActivity {
     DataBase base;
     SQLiteDatabase dataBase;
 
-    List<String> list;
-    List<Bitmap> listImg;
     ListView catalog;
-    ArrayAdapter<String> adapter;
 
     String baseTableName;
 
+    ListCursorAdapter adapter;
+
+    String recipeType;
     String columnNameChoose;
     int categoryNumChoose;
 
@@ -66,16 +65,11 @@ public class OverviewActivity extends ActionBarActivity {
 
     DisplayMetrics metrics;
 
-    int columnsCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overview);
-
-        list = new ArrayList<>();
-
-        listImg = new ArrayList<>();
 
         base = new DataBase(this);
 
@@ -89,7 +83,6 @@ public class OverviewActivity extends ActionBarActivity {
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
         if (getIntent().getStringExtra("type").compareTo("mushrooms") == 0) {
-
             baseTableName = DataBase.TABLE_MUSHROOMS;
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>" +  getResources().getString(R.string.activity_overview_title_mushrooms) + "</font>"));
 
@@ -97,10 +90,24 @@ public class OverviewActivity extends ActionBarActivity {
         }
 
         if (getIntent().getStringExtra("type").compareTo("berries") == 0) {
-
             baseTableName = DataBase.TABLE_BERRIES;
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>" +  getResources().getString(R.string.activity_overview_title_berries) + "</font>"));
             mScreenTitles = getResources().getStringArray(R.array.activity_overview_array_berries);
+        }
+
+        if(getIntent().getStringExtra("type").compareTo("recipe") == 0){
+            baseTableName = DataBase.TABLE_RECIPES;
+            if(getIntent().getStringExtra("typeR").compareTo("Berries") == 0){
+                getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>" +  getResources().getString(R.string.activity_overview_title_recipes_berries) + "</font>"));
+                mScreenTitles = getResources().getStringArray(R.array.activity_overview_array_recipes_berries);
+                recipeType = "Berries";
+            }
+
+            if(getIntent().getStringExtra("typeR").compareTo("Mushrooms") == 0){
+                getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>" +  getResources().getString(R.string.activity_overview_title_recipes_mushrooms) + "</font>"));
+                mScreenTitles = getResources().getStringArray(R.array.activity_overview_array_recipes_mushrooms);
+                recipeType = "Mushrooms";
+            }
         }
 
         catalog.setOnItemClickListener(new CatalogItemClickListener());
@@ -136,6 +143,12 @@ public class OverviewActivity extends ActionBarActivity {
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
+        // Get localized column name
+        columnNameChoose = "nameEN";
+        if (getResources().getConfiguration().locale.getLanguage().compareTo("ru") == 0){
+            columnNameChoose = "nameRU";
+        }
+
         if (savedInstanceState == null) {
             selectItem(0);
         }
@@ -146,60 +159,15 @@ public class OverviewActivity extends ActionBarActivity {
                 .getDrawable(android.R.drawable.ic_menu_close_clear_cancel);
 
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
+    }
 
-        //RelativeLayout spinner = (RelativeLayout)findViewById(R.id.catalogFooter);
-        //spinner.setVisibility(View.VISIBLE);
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
 
-       // catalog.addFooterView(spinner);
-
-        Cursor cursor = dataBase.query(baseTableName,
-                new String[]{"_id"},
-                null,
-                null,
-                null,
-                null,
-                null
-        );
-
-        columnsCount = cursor.getColumnCount();
-
-        final CatalogLoader[] catalogLoader = {new CatalogLoader(OverviewActivity.this)};
-
-        catalog.setOnScrollListener(new AbsListView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(AbsListView absListView, int scrollState) {
-                /*if (scrollState == SCROLL_STATE_IDLE){
-                    Log.d("TAG","SCROLL_STATE_IDLE");
-                }
-                if (scrollState == SCROLL_STATE_FLING){
-                    Log.d("TAG","SCROLL_STATE_FLING");
-                }
-                if (scrollState == SCROLL_STATE_TOUCH_SCROLL){
-                    Log.d("TAG","SCROLL_STATE_TOUCH_SCROLL");
-                }*/
-            }
-
-            @Override
-            public void onScroll(AbsListView view, int firstVisibleItem,
-                                 int visibleItemCount, int totalItemCount) {
-                //Check if the last view is visible
-
-
-                //Log.d("TAG",firstVisibleItem + " | " + visibleItemCount + " | " + columnsCount + " | " +  totalItemCount + " | " + catalogLoader[0].getStatus());
-                if ((++firstVisibleItem + visibleItemCount > totalItemCount - 10) && (columnsCount != totalItemCount)) {
-
-                  //  Log.d("TAG",firstVisibleItem + " | " + visibleItemCount + " | " + totalItemCount);
-                  //  Log.d("TAG", "LASTVIEW");
-
-                    if(catalogLoader[0].getStatus() != AsyncTask.Status.RUNNING ) {
-
-                        catalogLoader[0] = new CatalogLoader(OverviewActivity.this);
-                        catalogLoader[0].execute(totalItemCount);
-                     //   Log.d("TAG", "stt " + catalogLoader[0].getStatus());
-                    }
-                }
-            }
-        });
+        if (adapter != null) {
+            adapter.close();
+        }
     }
 
     // Создание актион бара (меню)
@@ -287,7 +255,7 @@ public class OverviewActivity extends ActionBarActivity {
         public void onTextChanged(CharSequence c, int i, int i2, int i3) {
 
             //OverviewActivity.this.adapter.getFilter().filter(c);
-            search(c.toString().toLowerCase());
+            refreshListAdapter(c.toString().toLowerCase());
         }
 
         @Override
@@ -298,65 +266,61 @@ public class OverviewActivity extends ActionBarActivity {
 
     }
 
-    public void search(String str){
+    private void refreshListAdapter(String filterString) {
+        Cursor cursor = queryCursor(categoryNumChoose, filterString);
 
-        listImg.clear();
-        list.clear();
-        Bitmap img;
+        if (adapter == null) {
+            adapter = new ListCursorAdapter(this, cursor, columnNameChoose, false, metrics);
+            catalog.setAdapter(adapter);
+        } else {
+            adapter.changeCursor(cursor);
+        }
+    }
 
-        columnNameChoose = "nameEN";
+    private Cursor queryCursor(int categoryNumChoose, String filterString) {
+        String categoryCondition;
+        String filterCondition;
+        String recipeCondition;
 
-        String  secondStr = str;
+        ArrayList<String> args = new ArrayList<>();
 
-        if (str.length() > 0){
-
-            secondStr = Character.toUpperCase(str.charAt(0))+ str.substring(1);
+        // Create category filter condition
+        if (categoryNumChoose != 0) {
+            categoryCondition = "(category LIKE ?)";
+            args.add("%" + categoryNumChoose + "%");
+        } else {
+            categoryCondition = "(1=1)";
         }
 
-        if (getResources().getConfiguration().locale.getLanguage().compareTo("ru") == 0){
+        // Create string filter condition
+        if (filterString != null && !filterString.isEmpty()) {
+            String secondStr = Character.toUpperCase(filterString.charAt(0)) + filterString.substring(1);
 
-            columnNameChoose = "nameRU";
+            filterCondition = "(" + columnNameChoose + " LIKE ? OR " + columnNameChoose + " LIKE ?)";
+            args.add("%" + filterString + "%");
+            args.add("%" + secondStr + "%");
+        } else {
+            filterCondition = "(1=1)";
         }
-        Log.d("TAG", columnNameChoose + " | " + " | " + baseTableName);
-        list.clear();
 
-        Cursor cursor = dataBase.query(baseTableName,
-                    null,
-                columnNameChoose + " LIKE ? OR " + columnNameChoose + " LIKE ?",
-                    new String[]{"%" + str + "%", "%" + secondStr + "%"},
-                    null,
-                    null,
-                    null
-            );
-
-
-        BitmapFactory.Options opt = new BitmapFactory.Options();
-
-        while (cursor.moveToNext()) {
-
-            int id = cursor.getInt(cursor.getColumnIndex("_id"));
-            String name = cursor.getString(cursor
-                    .getColumnIndex(columnNameChoose));
-            Log.i("LOG_TAG", "ROW " + id +" HAS NAME " + name);
-
-            byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-            img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length, opt);
-            try {
-                img = Bitmap.createScaledBitmap(img, metrics.widthPixels / 3, metrics.widthPixels / 3, false);
-            }catch (IllegalArgumentException e){
-                Log.d("TAG", "atata");
-            }
-            listImg.add(img);
-            list.add(name);
+        if (recipeType != null) {
+            recipeCondition = "type LIKE ?";
+            args.add("%" + recipeType + "%");
+        } else {
+            recipeCondition = "(1=1)";
         }
-        cursor.close();
 
-        adapter = new ListAdapter(this, list, listImg, metrics,false);
-        catalog.setAdapter( adapter);
+        return dataBase.query(baseTableName,
+                null,
+                categoryCondition + " AND " + filterCondition + " AND " + recipeCondition,
+                args.toArray(new String[args.size()]),
+                null,
+                null,
+                columnNameChoose
+        );
     }
 
     private void closeSearchBar() {
-
         mSearchEt = (EditText) findViewById(R.id.etSearch);
 
         InputMethodManager imm = (InputMethodManager)getSystemService(
@@ -389,67 +353,8 @@ public class OverviewActivity extends ActionBarActivity {
     }
 
     public void selectItem(int category){
-
-        listImg.clear();
-        list.clear();
-        Bitmap img;
-        String rowsC = "10";
         categoryNumChoose = category;
-
-        columnNameChoose = "nameEN";
-
-        if (getResources().getConfiguration().locale.getLanguage().compareTo("ru") == 0){
-
-            columnNameChoose = "nameRU";
-        }
-        Log.d("TAG", columnNameChoose + " | " + category + " | " + baseTableName);
-        Cursor cursor;
-        if (category == 0){
-            cursor = dataBase.query(baseTableName,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    columnNameChoose,
-                    rowsC
-            );
-
-        }else {
-            cursor = dataBase.query(baseTableName,
-                    null,
-                    "category LIKE ?",
-                    new String[]{"%" + category + "%"},
-                    null,
-                    null,
-                    columnNameChoose,
-                    rowsC
-            );
-        }
-
-        BitmapFactory.Options opt = new BitmapFactory.Options();
-
-        while (cursor.moveToNext()) {
-
-            int id = cursor.getInt(cursor.getColumnIndex("_id"));
-            String name = cursor.getString(cursor
-                    .getColumnIndex(columnNameChoose));
-            Log.i("LOG_TAG", "ROW " + id +" HAS NAME " + name);
-
-            byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-            img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length, opt);
-            try {
-                img = Bitmap.createScaledBitmap(img, metrics.widthPixels / 3, metrics.widthPixels / 3, false);
-            }catch (IllegalArgumentException e){
-                Log.d("TAG", "atata");
-            }
-            listImg.add(img);
-            list.add(name);
-        }
-        cursor.close();
-
-        adapter = new ListAdapter(this, list, listImg, metrics,false);
-        catalog.setAdapter( adapter);
+        refreshListAdapter(null);
     }
 
     @Override
@@ -480,11 +385,9 @@ public class OverviewActivity extends ActionBarActivity {
     private class CatalogItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
             TextView text = ((TextView) view.findViewById(R.id.catalogLabel));
 
-            if (getIntent().getStringExtra("type").compareTo("recipes") == 0 ) {
-
+            if (getIntent().getStringExtra("type").compareTo("recipe") == 0 ) {
                 Intent intent = new Intent(OverviewActivity.this, DescriptionRecipesActivity.class);
                 intent.putExtra("name", text.getText().toString());
                 startActivity(intent);
@@ -495,83 +398,6 @@ public class OverviewActivity extends ActionBarActivity {
             intent.putExtra("type", getIntent().getStringExtra("type"));
             intent.putExtra("name", text.getText().toString());
             startActivity(intent);
-        }
-    }
-
-
-    public class CatalogLoader extends AsyncTask<Integer,Void, Void> {
-
-        private Context context;
-
-
-        public CatalogLoader(Context context) { this.context = context; }
-
-
-        @Override
-        protected void onPreExecute() {
-
-        }
-
-        @Override
-        protected Void doInBackground(Integer... params) {
-
-            int items = params[0];
-
-           // listImg.clear();
-          //  list.clear();
-            Bitmap img;
-            Cursor cursor;
-            if (categoryNumChoose == 0) {
-                cursor = dataBase.query(baseTableName,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        columnNameChoose,
-                        Integer.toString(items + 10)
-                );
-            }else{
-                cursor = dataBase.query(baseTableName,
-                        null,
-                        "category LIKE ?",
-                        new String[]{"%" + categoryNumChoose + "%"},
-                        null,
-                        null,
-                        columnNameChoose,
-                        Integer.toString(items + 10)
-                );
-            }
-
-            BitmapFactory.Options opt = new BitmapFactory.Options();
-cursor.move(items);
-            while (cursor.moveToNext()) {
-
-                String name = cursor.getString(cursor
-                        .getColumnIndex(columnNameChoose));
-              //  Log.i("LOG_TAG", "ROW " + id +" HAS NAME " + name);
-
-                byte[] imgByte = cursor.getBlob(cursor.getColumnIndex("image"));
-                img = BitmapFactory.decodeByteArray(imgByte, 0, imgByte.length, opt);
-                try {
-                    img = Bitmap.createScaledBitmap(img, metrics.widthPixels / 3, metrics.widthPixels / 3, false);
-                }catch (IllegalArgumentException e){
-               //     Log.d("TAG", "atata");
-                }
-                listImg.add(img);
-                list.add(name);
-            }
-
-            cursor.close();
-
-
-          //  adapter.notifyDataSetChanged();
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void res) {
-            adapter.notifyDataSetChanged();
         }
     }
 }
