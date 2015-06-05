@@ -34,14 +34,6 @@
                 android:value="org.fruct.oss.mushrooms.MainActivity" />
         </activity>
         <activity
-            android:name="org.fruct.oss.mushrooms.OverviewRecipesActivity"
-            android:label="@string/title_activity_overview_recipes"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.fruct.oss.mushrooms.RecipesActivity" />
-        </activity>
-        <activity
             android:name="org.fruct.oss.mushrooms.DescriptionActivity"
             android:label="@string/title_activity_description"
             android:screenOrientation="portrait">
