@@ -10,7 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mush"
-        android:contentDescription="@string/listviewphoto" />
+        android:contentDescription="@string/listviewphoto"
+        android:scaleType="fitXY"
+        />
 
     <TextView
         android:id="@+id/catalogLabel"
